@@ -10,10 +10,12 @@ import mapMarker from '../images/map-marker.png';
 import api from '../services/api';
 
 interface OrphanagesItem {
+
   id: number;
   name: string;
   latitude: number;
   longitude: number;
+
 }
 
 const OrphanagesMap: React.FC = () => {
@@ -85,6 +87,7 @@ const OrphanagesMap: React.FC = () => {
 }
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
   },
@@ -142,5 +145,6 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   }
 });
+
 
 export default OrphanagesMap;
